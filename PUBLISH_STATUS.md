@@ -1,28 +1,26 @@
-# Publication status
+# Publication status — P0 corrected release
 
-The code and compact data are prepared as two clean local git repositories.
-The release tests pass, and no credential is stored in either repository.
+Code: https://github.com/ydchen0806/neuronmimic (master).
+Data: https://huggingface.co/datasets/cyd0806/neuronmimic-data .
 
-GitHub publication is complete at
-`https://github.com/ydchen0806/neuronmimic` (branch `master`, head
-`fcbdebe`). Run
-`scripts/publish_hf.sh PATH_TO_DATA_REPOSITORY` with `HF_TOKEN` and, if needed,
-`HF_REPOSITORY` to publish the data side. The scripts fail closed when
-credentials are absent.
+HF P0 commit: 22b892d184736f1f7c7c98a8a18eb409d603ccd0.
+The previously documented ydchen HF namespace was incorrect for the supplied account.
+The available HTTP CONNECT proxy successfully uploaded the data.
 
-The Hugging Face repository creation/upload remains pending because direct
-access to `huggingface.co` is blocked in this environment and the configured
-local proxy at `127.0.0.1:18181` is not listening. No token is stored in the
-repository or its history.
+Validation: 19 standalone tests passed; complete CPU baseline rerun reproduced
+stable metric hash d6ee192e77ebfd593b7845643b2dfe811db060ec28413f5c1e4abeacb8e48f91.
+Historical evaluation metrics are invalidated, not deleted. Updated metrics remain
+FIXTURE_TEST_ONLY. This release establishes no new biological functional units.
 
-## Science-gate status
+## P1-v2.2 release
 
-The current structural/dynamic gate is recorded at
-`artifacts/wu_20261030_science_gate/WU_REQUIREMENTS_STATUS_20261030.md`.
-The stable8 dynamic audit used a frozen model panel (8 input sources, 20 trials
-per source): four candidates showed sparse model response and four showed none;
-this is a model result and is not independent biological validation. An earlier
-pilot already contains three source-verified ALPN inputs with 100 stimulation
-trials and 100 no-stim controls per source. The remaining gap is broader source
-coverage, complete-parent matched controls, and a calibrated multi-compartment
-backend.
+HF dataset revision: `c8e36f59da204e52a94fd7a1a88df8b113b32807`. All 83 manifest-listed files were
+downloaded from this exact revision and SHA-256 verified.
+Standalone suite: 23 tests passed. Compact-bundle replay exactly reproduced
+all five model scores, global assignments and parent-child memberships.
+Ten real-data structural checks passed. Imported source-audit receipts are
+explicitly distinguished from audits rerun by the compact replay.
+
+P1A/B/C are implemented with the MaleCNS mapping blocker preserved. P1D is a
+retrospective descriptor pilot; P1E independent-connectome confirmation is blocked.
+No new candidate was promoted to frozen stable or biologically functional.

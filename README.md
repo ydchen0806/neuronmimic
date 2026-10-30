@@ -59,3 +59,11 @@ The GitHub repository contains code and protocols. The Hugging Face dataset cont
 ## Status labels
 
 `VERIFIED_REAL_DATA` means a source table was audited and hashed. `COMPUTED_MODEL_RESULT` means a result from the declared model. `FIXTURE_TEST_ONLY` means synthetic or passive-cable test data. `BLOCKED_MISSING_DATA` means the required biological input is unavailable or not yet mapped.
+
+## Structural P1-v2.2 release
+
+[Reproduce the KC structural experiment](docs/P1_REPRODUCE.md) from the
+[public compact data](https://huggingface.co/datasets/cyd0806/neuronmimic-data/tree/main/p1_v2_fine_types).
+It includes unordered-pair isolation, genuine soma/tree fusion, complete-parent splits
+and a retrospective five-model descriptor comparison. Stable8 membership is unchanged;
+new partitions and the 18-cell ap1 subset remain exploratory.
