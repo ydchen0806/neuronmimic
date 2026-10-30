@@ -5,7 +5,7 @@ The release tests pass, and no credential is stored in either repository.
 
 GitHub publication is complete at
 `https://github.com/ydchen0806/neuronmimic` (branch `master`, head
-`f3b2369ceeb798b48fbcf0862ec345f0e05458f0`). Run
+`fcbdebe`). Run
 `scripts/publish_hf.sh PATH_TO_DATA_REPOSITORY` with `HF_TOKEN` and, if needed,
 `HF_REPOSITORY` to publish the data side. The scripts fail closed when
 credentials are absent.
