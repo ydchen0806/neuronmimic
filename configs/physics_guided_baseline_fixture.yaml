@@ -1,0 +1,28 @@
+status: FIXTURE_TEST_ONLY
+seed: 20261030
+teacher:
+  n_compartments: 12
+  dt_ms: 0.05
+  duration_ms: 80.0
+  tau_mem_ms: 12.0
+  tau_syn_ms: 4.0
+  leak_conductance: 1.0
+  axial_conductance: 0.35
+  capacitance: 1.0
+  resting_voltage: -65.0
+  synapse_reversal: 0.0
+  synapse_increment: 0.8
+  spike_threshold: -45.0
+students:
+  train_stimuli: 6
+  heldout_stimuli: 3
+  epochs: 120
+  optimizer: Adam
+  learning_rate: 0.002
+  rollout_readout_compartment: 11
+  latency_threshold_mv: -64.5
+active_search:
+  k: 2
+  target_readout_compartment: 11
+  target_time_ms: 25.0
+  methods: [random, structural_single_site, gradient_relaxation_topk]
