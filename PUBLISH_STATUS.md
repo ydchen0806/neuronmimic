@@ -19,9 +19,10 @@ repository or its history.
 
 The current structural/dynamic gate is recorded at
 `artifacts/wu_20261030_science_gate/WU_REQUIREMENTS_STATUS_20261030.md`.
-The stable8 dynamic audit used the frozen model panel only (8 input sources,
-20 trials per source). Four candidates showed sparse model response and four
-showed none; this is a model result and is not independent biological
-validation. The next required experiment remains verified single-input
-stimulation with matched parent/residual controls and approximately 100 trials
-per source.
+The stable8 dynamic audit used a frozen model panel (8 input sources, 20 trials
+per source): four candidates showed sparse model response and four showed none;
+this is a model result and is not independent biological validation. An earlier
+pilot already contains three source-verified ALPN inputs with 100 stimulation
+trials and 100 no-stim controls per source. The remaining gap is broader source
+coverage, complete-parent matched controls, and a calibrated multi-compartment
+backend.
