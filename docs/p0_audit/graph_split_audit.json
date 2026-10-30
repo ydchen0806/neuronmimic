@@ -1,0 +1,12 @@
+{
+  "train_pairs": 234964,
+  "test_pairs": 58798,
+  "full_pairs": 293762,
+  "train_synapse_weight": 303437.0,
+  "test_synapse_weight": 75901.0,
+  "test_pairs_with_reverse_in_train": 15119,
+  "maximum_embedding_replay_error": 1.568523089190421e-11,
+  "direct_overlap_status": "VERIFIED",
+  "historically_untouched_test_status": "NOT_UNTOUCHED_RETROSPECTIVE_DEVELOPMENT",
+  "scope": "Directed-edge isolation verified, not independent neurons or animals; old ap2 protocol explicitly acknowledges prior test inspection."
+}

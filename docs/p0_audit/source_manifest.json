@@ -1,0 +1,68 @@
+{
+  "inputs": [
+    {
+      "path": "artifacts/wu_20261019/registry/kc_all.parquet",
+      "sha256": "b3feec83445ac245e38a1b983a30fa8badaf3741c613b234af0cc806cf44baa1",
+      "bytes": 226526
+    },
+    {
+      "path": "artifacts/wu_20261019/registry/stable8_members.parquet",
+      "sha256": "01f7ab2dd5e8527f303cead2f8c89e8f92990b06020598ef5390dcd07c2af2eb",
+      "bytes": 64431
+    },
+    {
+      "path": "nature_methods_connectome/next_stage_structure_first_20260912/artifacts/flywire_all_kc_partner_pilot_20260912/data/kc_graph_train.npz",
+      "sha256": "7606f06b239f4c91a2715640197b9b767961941cf552f6a03f7045405d80e78a",
+      "bytes": 526457
+    },
+    {
+      "path": "nature_methods_connectome/next_stage_structure_first_20260912/artifacts/flywire_all_kc_partner_pilot_20260912/data/kc_graph_test.npz",
+      "sha256": "fc6f87970381fee4cb167dbc511bfd46641b3cf2d2afe4ae337445d061e45757",
+      "bytes": 147278
+    },
+    {
+      "path": "nature_methods_connectome/next_stage_structure_first_20260912/artifacts/flywire_all_kc_partner_pilot_20260912/data/kc_graph.npz",
+      "sha256": "c41e6b2f70a53e3f1d41e587548fd1856fddb194966c0caad973b34d8871602c",
+      "bytes": 645540
+    },
+    {
+      "path": "nature_methods_connectome/fine_structure_mechanism/runs/20261018_wu1018_frozen5177_review_v11/results/features/direct_embedding.npy",
+      "sha256": "e2c2487735019964d9c14736f6a230bddd69bb24b2c0f68a81a8d0c37b372b6b",
+      "bytes": 2650752
+    },
+    {
+      "path": "artifacts/wu_20261030_fine_units_integrated_atlas/registry/fine_unit_summary.csv",
+      "sha256": "1a5846849587e4bcc8001c46a7f5a0bffd5e243482b40c6e410eb1154a0e10eb",
+      "bytes": 10615
+    },
+    {
+      "path": "artifacts/wu_20261030_fine_units_integrated_atlas/registry/fine_unit_members.parquet",
+      "sha256": "8471dce5f60cf09729d5596a842d34bc55c1fe8b07640725bea1e1d4d9d0149e",
+      "bytes": 24181
+    },
+    {
+      "path": "artifacts/wu_20261026_multiscale_units/audit/input_manifest.json",
+      "sha256": "4841ff3429fa232c91614e58901e9e3f4034245641a147ab5e85f51900151c8d",
+      "bytes": 3438
+    },
+    {
+      "path": "artifacts/wu_20261030_malecns_extension/adapter/malecns_annotations_normalized.parquet",
+      "sha256": "bebab58e743bb78b7711c76287305534205092d000c1ebc6fdb0cf5cbb351e49",
+      "bytes": 1579892
+    },
+    {
+      "path": "artifacts/wu_20261030_malecns_extension/adapter/malecns_directed_edges_normalized.parquet",
+      "sha256": "6375b28355c4f1ccd7c9b486ee5b93e5fb5bc43e8f5337cad5be7aa04569684d",
+      "bytes": 2142834
+    }
+  ],
+  "audit_script_sha256": "fa8de9dcdd0a002631b63c7e943627e0b595a8c3ca21d998dab2e65363940d91",
+  "code_commit": "f15ab12e1988000f71ec5e0ab138ab116f150e7d",
+  "dataset_versions": [
+    "FlyWire v783",
+    "MaleCNS v1.0 local input subset"
+  ],
+  "protocol_version": "nature_kc_p0_metrics_v2",
+  "run_id": "p0_structural_audit",
+  "seed": 20260912
+}

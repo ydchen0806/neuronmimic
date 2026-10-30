@@ -2,6 +2,20 @@
 
 NeuronMimic is a small, reproducible baseline for **physics-guided differentiable neural dynamics**. It preserves directed edges, calibrates bounded LIF parameters, and exposes a fixture-only passive cable Teacher with three comparable Student models: MLP, graph message passing, and physics plus learned residual.
 
+## Corrected P0 release (2026-10-30)
+
+Earlier physics-guided evaluation metrics are **INVALIDATED**: trajectory broadcasting,
+voltage/conductance mixing and mismatched gradient/search objectives were corrected.
+Historical outputs remain for traceability; use `outputs/physics_guided_p0_v2` for new runs.
+See [audit and invalidation ledger](docs/p0_audit/P0_REPORT.md).
+
+Corrected held-out voltage RMSE (mV): MLP 5.82327, Graph 33.85993,
+PhysicsResidual 0.0146632, PhysicsOnly 0.00000815265.
+These are **FIXTURE_TEST_ONLY** results on one synthetic 12-compartment chain,
+six training and three held-out stimuli, seed 20261030. The known-equation
+solver outperforms every Student; this establishes no biological discovery
+or surrogate advantage. Negative-conductance and missed-response failures are retained.
+
 ## What is complete
 
 - Directed surrogate-LIF model and held-out trajectory calibration.
@@ -37,10 +51,10 @@ python scripts/run_physics_guided_baseline.py
 ## Releases and data
 
 - Code repository: https://github.com/ydchen0806/neuronmimic
-- Reusable compact data and receipts: https://huggingface.co/datasets/ydchen/neuronmimic-data
+- Reusable compact data and receipts: https://huggingface.co/datasets/cyd0806/neuronmimic-data
 - FlyWire KC structural-entry package (separate, source-bound release): `KC_fine_unit_structural_entries_20261030_v2_final4_clean.zip`, SHA-256 `5446c1df6419c1afddcdefe88d2c71c0481c7e18a6ec6e772222d049bce2e718`
 
-The GitHub repository contains code and protocols. The Hugging Face dataset contains only compact, source-bound tables, fixture outputs, schemas, and provenance receipts. Raw or license-restricted connectome files are excluded. The two locations will be cross-linked after remote creation; upload scripts must receive credentials through the environment and never write tokens to files or history.
+The GitHub repository contains code and protocols. The Hugging Face dataset contains only compact, source-bound tables, fixture outputs, schemas, and provenance receipts. Raw or license-restricted connectome files are excluded. Remote upload status is recorded in PUBLISH_STATUS.md. Credentials are never included in releases.
 
 ## Status labels
 

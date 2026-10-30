@@ -1,0 +1,7 @@
+{
+  "non_timing_model_metrics": true,
+  "results/gradient_check.csv": true,
+  "results/active_search_teacher_rechecked.csv": true,
+  "primary_all_output_hashes": true,
+  "replay_all_output_hashes": true
+}

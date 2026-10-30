@@ -1,0 +1,27 @@
+{
+  "stage": "P0",
+  "status": "DONE_WITH_BLOCKERS",
+  "protocol_version": "nature_kc_p0_metrics_v2",
+  "metrics_repair": "PASS",
+  "scientific_regression_tests": 23,
+  "structural_checks_passed": 173,
+  "seed_replay": "PASS",
+  "historical_invalidated_results": "invalidated_results.csv",
+  "historical_results_preserved": true,
+  "new_stable_units": 0,
+  "biological_validation": "NOT_PERFORMED",
+  "external_push": "NOT_PERFORMED",
+  "P1_gate": {
+    "retrospective_design_and_data_QC": "READY",
+    "confirmatory_structural_claims": "BLOCKED",
+    "reasons": [
+      "old held-out edges already used during development",
+      "cross-connectome endpoint annotation gaps",
+      "unverified user-supplied literature claims"
+    ]
+  },
+  "release_note": "Existing GitHub release still contains old metric implementation; fix local, no automatic push requested.",
+  "source_script": "simulation/scripts/finalize_nature_kc_p0.py",
+  "source_script_sha256": "eb0387c841316442f4ed24cefc41db735c5c2795d0bf301181f7af4981c0e709",
+  "code_commit": "f15ab12e1988000f71ec5e0ab138ab116f150e7d"
+}

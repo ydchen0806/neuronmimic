@@ -55,23 +55,34 @@ class GraphDynamics(_BaseStudent):
         return torch.cat([v + delta[..., 0] + 0.1 * (neighbor - v), g + delta[..., 1]], dim=-1)
 
 
-class PhysicsResidualDynamics(_BaseStudent):
-    """Known low-order cable update plus a bounded learned residual."""
+class PhysicsOnlyDynamics(_BaseStudent):
+    """Unlearned SAME-resolution Teacher-equation reference, not a speedup claim."""
     def __init__(self, adjacency: Tensor, config: CableTeacherConfig, hidden: int = 48) -> None:
         super().__init__(int(adjacency.shape[0]))
         self.config = config
         self.register_buffer("adjacency", adjacency.to(torch.float32))
-        self.residual = nn.Sequential(nn.Linear(3, hidden), nn.Tanh(), nn.Linear(hidden, 1))
 
     def step(self, state: Tensor, event: Tensor) -> Tensor:
         n = self.n
         v, g = state[:, :n], state[:, n:]
         dt = self.config.dt_ms
-        g_next = g * torch.exp(torch.tensor(-dt / self.config.tau_syn_ms, device=state.device)) + event * self.config.synapse_increment
+        g_next = g * torch.exp(state.new_tensor(-dt / self.config.tau_syn_ms)) + event * self.config.synapse_increment
         axial = self.config.axial_conductance * (torch.einsum("ij,bj->bi", self.adjacency, v) - self.adjacency.sum(dim=-1) * v)
         effective_leak = self.config.leak_conductance * self.config.capacitance / self.config.tau_mem_ms
         leak = effective_leak * (self.config.resting_voltage - v)
         syn = g_next * (self.config.synapse_reversal - v)
         physics = v + dt / self.config.capacitance * (leak + axial + syn)
-        residual = 0.1 * torch.tanh(self.residual(torch.stack([v, g, event], dim=-1))).squeeze(-1)
-        return torch.cat([physics + residual, g_next], dim=-1)
+        return torch.cat([physics, g_next], dim=-1)
+
+
+class PhysicsResidualDynamics(PhysicsOnlyDynamics):
+    """Teacher-resolution physics plus bounded residual; compare to PhysicsOnly."""
+    def __init__(self, adjacency: Tensor, config: CableTeacherConfig, hidden: int = 48):
+        super().__init__(adjacency, config)
+        self.residual = nn.Sequential(nn.Linear(3, hidden), nn.Tanh(), nn.Linear(hidden, 1))
+
+    def step(self, state: Tensor, event: Tensor) -> Tensor:
+        physical = super().step(state, event)
+        v, g = state[:, :self.n], state[:, self.n:]
+        correction = 0.1 * torch.tanh(self.residual(torch.stack([v,g,event],dim=-1))).squeeze(-1)
+        return torch.cat([physical[:,:self.n]+correction, physical[:,self.n:]],dim=-1)
