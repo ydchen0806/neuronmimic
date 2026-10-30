@@ -40,9 +40,21 @@ def sha256_file(path: Path) -> str:
 def _string_id(value: Any) -> str | None:
     if value is None or pd.isna(value):
         return None
+    if isinstance(value, str):
+        text = value.strip()
+        if not text:
+            return None
+        if text.isdigit():
+            return text
+        raise ValueError(f"non-integral MaleCNS body ID: {value!r}")
     # IDs in the source tables are integer-valued float columns when nulls are
     # present.  Reject non-integral values instead of silently rounding them.
     number = float(value)
+    if isinstance(value, float) and abs(number) > 2**53:
+        raise ValueError(
+            "64-bit body ID arrived as an imprecise floating-point value; "
+            "read the source column as int64/string before adapter conversion"
+        )
     if not number.is_integer():
         raise ValueError(f"non-integral MaleCNS body ID: {value!r}")
     return str(int(number))
