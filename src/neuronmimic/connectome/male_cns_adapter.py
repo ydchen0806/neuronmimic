@@ -180,7 +180,7 @@ def write_adapter_outputs(config: MaleCNSAdapterConfig, output_dir: Path) -> dic
     audit = audit_male_cns(config)
     paths["audit"].write_text(json.dumps(audit, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     provenance = {
-        "adapter": "bio_fly.male_cns_adapter",
+        "adapter": "neuronmimic.connectome.male_cns_adapter",
         "adapter_version": "0.1.0",
         "config": {k: str(v) if isinstance(v, Path) else v for k, v in asdict(config).items()},
         "source_hashes": {"annotations": sha256_file(config.annotations), "edges": sha256_file(config.edges)},

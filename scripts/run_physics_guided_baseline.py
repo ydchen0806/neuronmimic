@@ -16,8 +16,8 @@ import torch
 
 from neuronmimic.physics_guided import CableTeacherConfig, GraphDynamics, MLPDynamics, PhysicsResidualDynamics, make_stimulus_panel, simulate_teacher
 
-ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "artifacts" / "wu_20261030_physics_guided_baseline"
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "outputs" / "physics_guided_baseline"
 TEACHER = OUT / "teacher"
 RESULTS = OUT / "results"
 SEED = 20261030

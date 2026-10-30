@@ -1,4 +1,4 @@
-"""Held-out trajectory calibration for :mod:`bio_fly.neuronmimic`."""
+"""Held-out trajectory calibration for :mod:`neuronmimic`."""
 from __future__ import annotations
 
 from dataclasses import dataclass
