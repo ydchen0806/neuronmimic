@@ -1,0 +1,20 @@
+{
+  "release": "neuronmimic-2026-10-30",
+  "atlas": {
+    "flywire_structural_entries": "COMPLETE_STRUCTURAL_RELEASE",
+    "male_cns_directed_adapter": "COMPLETE_AUDITED_ADAPTER",
+    "male_cns_contact_to_branch": "BLOCKED_MISSING_DATA",
+    "independent_biological_validation": "NOT_COMPLETE"
+  },
+  "neuronmimic": {
+    "directed_lif_calibration": "COMPLETE_BASELINE",
+    "physics_guided_fixture": "COMPLETE_FIXTURE_ONLY",
+    "real_multicompartment_teacher_calibration": "BLOCKED_MISSING_DATA",
+    "neural_twin_claim": "NOT_SUPPORTED"
+  },
+  "publication": {
+    "github": "LOCAL_COMMIT_READY_REMOTE_AUTH_REQUIRED",
+    "huggingface": "LOCAL_DATASET_READY_REMOTE_AUTH_REQUIRED",
+    "credentials_written_to_repository": false
+  }
+}
