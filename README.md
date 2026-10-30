@@ -14,6 +14,14 @@ NeuronMimic is a small, reproducible baseline for **physics-guided differentiabl
 
 This release is **not** a calibrated multi-compartment neural twin. The cable Teacher is `FIXTURE_TEST_ONLY`. A real Arbor Teacher requires complete compartment geometry, contact-to-branch mapping, conductance parameters, and held-out biological recordings. No fixture result should be described as physiology or independent biological validation.
 
+The parent BioFly project records the current Wu-lab requirement matrix in
+`artifacts/wu_20261030_science_gate/WU_REQUIREMENTS_STATUS_20261030.md`.
+The stable8 dynamic gate currently uses a frozen model panel (8 input sources,
+20 trials/source): four candidates show sparse model responses and four show
+none. This is a screening result, not a functional validation. Verified
+single-input stimulation with matched parent/residual controls and roughly 100
+trials/source is still required.
+
 ## Reproduce
 
 ```bash
