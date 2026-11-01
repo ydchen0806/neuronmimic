@@ -1,0 +1,12 @@
+{
+  "repo": "cyd0806/neuronmimic-data",
+  "revision": "c5054f9c96b259c6ff6e5d1fd3556894eae76fad",
+  "previous_revision": "c8e36f59da204e52a94fd7a1a88df8b113b32807",
+  "upload_completed": true,
+  "remote_hash_verification": "PASSED",
+  "verified_files": 314,
+  "manifest_files": 313,
+  "verified_bytes": 81687352,
+  "code_link": "https://github.com/ydchen0806/neuronmimic",
+  "scope": "P1D compact inputs, outputs and historical artifacts; no new functional unit validation"
+}

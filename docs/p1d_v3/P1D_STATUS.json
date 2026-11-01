@@ -1,0 +1,14 @@
+{
+  "protocol": "P1D-v3.0-focused-ap1-retrospective",
+  "P1D_0": "PASS_COUNT_SPLIT_QC; ROSETTE_ANNOTATION_BLOCKED",
+  "P1D_1": "DONE_FOCUSED_148_CELL_GEOMETRY_AND_NODE_DISJOINT_COMPARISON",
+  "P1D_2": "PARTIAL_RANDOM_DROPOUT_ROBUST_WEAK_EDGE_SENSITIVE_MATCHING_FAILED",
+  "P1D_3": "PARTIAL_OBSERVED_ROUTES_ONLY_NO_VALID_MATCHED_SIGNIFICANCE",
+  "P1E": "MALE_SOURCE_ID_GAP_EXPLAINED; BANC_QC_PREPARED; EXTERNAL_MECHANISM_NOT_VALIDATED",
+  "hypothesis_verdict": "INSUFFICIENT_FOR_GLOBAL_CONTINUOUS_VS_HYBRID_VERDICT",
+  "positive_result": "Regional skeleton opportunity improves within-ap1 pair-heldout prediction; node-disjoint point estimate improves but interval crosses zero",
+  "new_validated_functional_units": 0,
+  "stable8_unchanged": true,
+  "scope": "one FlyWire left ap1 parent, same brain, retrospective",
+  "next_step": "Replicate regional geometry effect across parents and an independent registered specimen; assess whether frozen residual label adds robust out-of-brain routing information"
+}

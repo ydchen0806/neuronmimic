@@ -1,5 +1,7 @@
 # P1-v2.2 structural baseline
 
+Historical release; see [P1D update](P1D_REPRODUCE.md) for the later source-QC resolution and regional-tree experiments.
+
 Code: https://github.com/ydchen0806/neuronmimic
 Data: https://huggingface.co/datasets/cyd0806/neuronmimic-data
 

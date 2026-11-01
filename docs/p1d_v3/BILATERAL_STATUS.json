@@ -1,0 +1,16 @@
+{
+  "protocol_version": "P1D-v3.1-bilateral-spatial-ap1",
+  "run_id": "p1d_v3_bilateral_20261101",
+  "status": "DONE_SAME_BRAIN_GEOMETRY_STRESS_TEST",
+  "left_parent": 148,
+  "right_parent": 133,
+  "new_discovery_or_label_selection": false,
+  "new_validated_functional_units": 0,
+  "spatial_folds_improved": 10,
+  "spatial_folds_total": 10,
+  "cross_side_directions_improved": 2,
+  "cross_side_directions_total": 2,
+  "independent_specimen_validation": "NOT_COMPLETED",
+  "functional_or_causal_validation": "NOT_COMPLETED",
+  "primary_caveat": "Bilateral patterns are same-brain evidence; soma blocks may have nearby boundaries, and rigid reflection is not exact anatomy registration."
+}

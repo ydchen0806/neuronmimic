@@ -2,6 +2,26 @@
 
 NeuronMimic is a small, reproducible baseline for **physics-guided differentiable neural dynamics**. It preserves directed edges, calibrates bounded LIF parameters, and exposes a fixture-only passive cable Teacher with three comparable Student models: MLP, graph message passing, and physics plus learned residual.
 
+## Regional-tree geometry update (2026-11-01)
+
+Within the known ap1 KC fine type, regional tree proximity improves held-out
+connection prediction on both sides (left 148 / right 133 cells), in all ten
+soma-block folds and both cross-side transfer directions. This is **same-brain
+structural prediction**, not independent biological or functional validation.
+The frozen 18-cell subset remains exploratory; matched routing controls failed,
+and the extra label effect is not established. Stable8 is unchanged; newly
+validated functional units remain zero.
+
+[Methods, results and standalone replay](docs/P1D_REPRODUCE.md) ·
+[Detailed bilateral report](docs/p1d_v3/BILATERAL_REPORT.md) ·
+[Earlier P1D negative results and QC](docs/p1d_v3/P1D_REPORT.md) ·
+[HF model inputs, weights and source tables](https://huggingface.co/datasets/cyd0806/neuronmimic-data/tree/main/p1d_v3_bilateral)
+
+MaleCNS source QC now locates all 31,355 annotation-missing endpoints in the
+same-release neurotransmitter table. Cell-type annotations remain incomplete;
+this is not evidence of a release-ID mismatch. Independent-brain region/type
+harmonization and held-out physiology remain open.
+
 ## Corrected P0 release (2026-10-30)
 
 Earlier physics-guided evaluation metrics are **INVALIDATED**: trajectory broadcasting,

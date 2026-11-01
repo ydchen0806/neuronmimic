@@ -24,3 +24,25 @@ explicitly distinguished from audits rerun by the compact replay.
 P1A/B/C are implemented with the MaleCNS mapping blocker preserved. P1D is a
 retrospective descriptor pilot; P1E independent-connectome confirmation is blocked.
 No new candidate was promoted to frozen stable or biologically functional.
+
+## P1D-v3 and bilateral geometry release — 2026-11-01
+
+HF immutable revision: `c5054f9c96b259c6ff6e5d1fd3556894eae76fad`. All 313 manifest-listed
+files plus the manifest itself (314 total) were downloaded from that exact revision
+and SHA-256 verified, including historical files. No prior results were deleted.
+
+Standalone suite: 28 tests passed. Independent-process compact model refit exactly
+reproduced 475,722 predictions (maximum absolute difference 0), 108 portable model
+parameter sets, split tables, model scores and contrasts. Parent repository focused
+P1D/bilateral tests: 13 passed. Original raw-source/geometry audits are imported by
+the public replay and are explicitly not claimed as rerun.
+
+The release includes source snapshots with hashes, frozen protocols, retained failed
+matched controls, low-count-edge sensitivity, MaleCNS/BANC source QC and bilateral
+soma-block/cross-side prediction results. MaleCNS endpoint provenance is resolved
+as an annotation-coverage gap; independent-connectome mechanism validation remains
+open. The geometry results come from one FlyWire animal. Stable8 is unchanged;
+newly validated functional units remain zero.
+
+See [replay commands](docs/P1D_REPRODUCE.md), [verification receipt](docs/p1d_v3/HF_RELEASE.json)
+and [independent replay check](docs/p1d_v3/independent_replay_check.json).

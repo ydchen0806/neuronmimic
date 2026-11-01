@@ -1,0 +1,62 @@
+[
+  {
+    "original_path": "simulation/scripts/run_kc_p1d_v3.py",
+    "published_path": "research/p1d_source_snapshot/simulation/scripts/run_kc_p1d_v3.py",
+    "sha256": "3a195e15b2e4a0d40c09102c9c2d7123a2ddecd5180a052eeb647576a50e2b9a"
+  },
+  {
+    "original_path": "simulation/scripts/finalize_kc_p1d_v3.py",
+    "published_path": "research/p1d_source_snapshot/simulation/scripts/finalize_kc_p1d_v3.py",
+    "sha256": "bfd82c7ea4476519efd41f2b66752a6d31cf73757377a14c0df62555a7cac2e6"
+  },
+  {
+    "original_path": "simulation/scripts/run_kc_p1d_bilateral.py",
+    "published_path": "research/p1d_source_snapshot/simulation/scripts/run_kc_p1d_bilateral.py",
+    "sha256": "aac19895620a2368c8497df139b50a8c79d6003f58f99a532598d7cb5584a174"
+  },
+  {
+    "original_path": "simulation/scripts/finalize_kc_p1d_bilateral.py",
+    "published_path": "research/p1d_source_snapshot/simulation/scripts/finalize_kc_p1d_bilateral.py",
+    "sha256": "21a0097edacddaf01fd57cf3fb18f386c396739a7e8669d813a7f176abb07f3c"
+  },
+  {
+    "original_path": "simulation/scripts/analyze_ap2_arbor.py",
+    "published_path": "research/p1d_source_snapshot/simulation/scripts/analyze_ap2_arbor.py",
+    "sha256": "bae52c75bbda6ea07f860a32ef4ee02493cdc63fd0182bca311396455d436fee"
+  },
+  {
+    "original_path": "simulation/src/bio_fly/p1_structure.py",
+    "published_path": "research/p1d_source_snapshot/simulation/src/bio_fly/p1_structure.py",
+    "sha256": "5b5917ee598dc56bbe4cfbcfb24638dfcafd7438deb5d891d8f87e8d121d1bf4"
+  },
+  {
+    "original_path": "simulation/src/bio_fly/kc_weighted_structure.py",
+    "published_path": "research/p1d_source_snapshot/simulation/src/bio_fly/kc_weighted_structure.py",
+    "sha256": "db87ac77f5dfc93d9c78536c6405c5586edab36657aafafd036a12f6d0a416cc"
+  },
+  {
+    "original_path": "simulation/src/bio_fly/wu_20261019/arbor_opportunity.py",
+    "published_path": "research/p1d_source_snapshot/simulation/src/bio_fly/wu_20261019/arbor_opportunity.py",
+    "sha256": "d1a00774d9a5114e999683199cf71c08233fc95e893be22432063e639b225201"
+  },
+  {
+    "original_path": "simulation/src/bio_fly/wu_20261019/calyx_geometry.py",
+    "published_path": "research/p1d_source_snapshot/simulation/src/bio_fly/wu_20261019/calyx_geometry.py",
+    "sha256": "feced79e1bfdbd75106500d9a005d64d5652e5cba0ba233e5a749125221449d7"
+  },
+  {
+    "original_path": "simulation/tests/test_p1d_v3.py",
+    "published_path": "research/p1d_source_snapshot/simulation/tests/test_p1d_v3.py",
+    "sha256": "35d4126d0b0e4c4356e8f4a5477b707decbc9c9ad3c2ec3980e813eb70283938"
+  },
+  {
+    "original_path": "simulation/tests/test_p1d_bilateral.py",
+    "published_path": "research/p1d_source_snapshot/simulation/tests/test_p1d_bilateral.py",
+    "sha256": "2eb7137faed4a8681dc1627bc1510900881b8e63770bcd798f688dfb295b8a85"
+  },
+  {
+    "original_path": "simulation/tests/test_ap2_arbor_opportunity.py",
+    "published_path": "research/p1d_source_snapshot/simulation/tests/test_ap2_arbor_opportunity.py",
+    "sha256": "7f592819d5f6585ae1d7edc3b03fae1decf4463a8fd8f090e29a64aa6d14a811"
+  }
+]
