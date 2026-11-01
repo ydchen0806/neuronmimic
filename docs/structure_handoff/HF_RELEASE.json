@@ -1,0 +1,12 @@
+{
+  "repo": "cyd0806/neuronmimic-data",
+  "revision": "b4143c83be3df42a95983d2be34af4354a25a84c",
+  "previous_revision": "c5054f9c96b259c6ff6e5d1fd3556894eae76fad",
+  "upload_completed": true,
+  "remote_hash_verification": "PASSED",
+  "verified_files": 592,
+  "manifest_files": 591,
+  "verified_bytes": 918426875,
+  "code_link": "https://github.com/ydchen0806/neuronmimic",
+  "scope": "All declared KC geometry and incident physical contacts with unknown partners preserved; not full-brain EM or external partner skeletons"
+}

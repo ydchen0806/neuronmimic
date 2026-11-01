@@ -2,6 +2,18 @@
 
 NeuronMimic is a small, reproducible baseline for **physics-guided differentiable neural dynamics**. It preserves directed edges, calibrates bounded LIF parameters, and exposes a fixture-only passive cable Teacher with three comparable Student models: MLP, graph message passing, and physics plus learned residual.
 
+## Full KC anatomy handoff (2026-11-01)
+
+[逐团结构查询与下载指南](docs/STRUCTURE_HANDOFF.md) · [HF anatomy bundle](https://huggingface.co/datasets/cyd0806/neuronmimic-data/tree/main/structure_handoff_v1)
+
+FlyWire: all5,177 KC skeletons and1,881,678 incident physical synapses, both endpoint
+coordinates, branch mapping, residual backgrounds and versioned CM/SU memberships.
+MaleCNS v1.0: all4,064 annotated KC skeletons and4,027,967 incident physical synapses,
+both endpoint coordinates, confidence/ROI and presynaptic transmitter posteriors.
+The query CLI exports all anatomy for a group or cell. Cross-dataset group homology
+and new functional validation are not claimed; external partner skeletons/full-brain
+EM volumes are outside this KC package. Original data sources and units are explicit.
+
 ## Regional-tree geometry update (2026-11-01)
 
 Within the known ap1 KC fine type, regional tree proximity improves held-out

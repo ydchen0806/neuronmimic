@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "datasets": {
+    "flywire_v783": {
+      "cells": 5177,
+      "group_views": 38,
+      "unique_group_members": 2412,
+      "geometry_files_hash_verified": 5177,
+      "skeleton_nodes": 7024185,
+      "physical_contact_pairs": 1881678,
+      "input_contacts": 970760,
+      "output_contacts": 1290256,
+      "internal_contacts": 379338,
+      "distinct_directed_body_pairs": 888641,
+      "endpoints": 2261016,
+      "coordinate_direction_conservation": "PASSED_ALL_ENDPOINTS",
+      "stable8_members": 965
+    },
+    "malecns_v1_0": {
+      "cells": 4064,
+      "group_views": 29,
+      "unique_group_members": 4064,
+      "geometry_files_hash_verified": 4064,
+      "skeleton_nodes": 4184720,
+      "physical_contact_pairs": 4027967,
+      "input_contacts": 2177431,
+      "output_contacts": 3004381,
+      "internal_contacts": 1153845,
+      "distinct_directed_body_pairs": 1828440
+    }
+  }
+}

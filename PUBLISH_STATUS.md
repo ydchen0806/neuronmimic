@@ -46,3 +46,23 @@ newly validated functional units remain zero.
 
 See [replay commands](docs/P1D_REPRODUCE.md), [verification receipt](docs/p1d_v3/HF_RELEASE.json)
 and [independent replay check](docs/p1d_v3/independent_replay_check.json).
+
+## Full KC anatomy release — 2026-11-01
+
+HF immutable revision: `b4143c83be3df42a95983d2be34af4354a25a84c`. All591 manifest files plus
+the manifest itself were downloaded from the exact remote revision and SHA256
+verified (592files,918,426,875bytes including historical releases). The new
+structure_handoff_v1 namespace contains278files /836,683,041bytes.
+
+FlyWire:5,177 KC geometries,1,881,678 incident physical contact pairs, full
+pre/post positions, branch projections/quality, known-type and residual context.
+MaleCNS v1.0:4,064 original same-version public coarse SWCs,4,027,967 incident
+physical contacts and990,665 presynaptic site transmitter records. Source MD5
+and SHA256 checks, all skeleton coverage/topology and aggregate-edge conservation
+passed. No v0.9 skeleton was silently joined to v1.0.
+
+Software suite31passed; actual group/cell export tests passed. CM019132members
+and SU019104members remain distinct (104overlap). Query commands and exact data
+revision are in [STRUCTURE_HANDOFF.md](docs/STRUCTURE_HANDOFF.md). No new stable
+or biological functional unit was declared. Full-brain EM/segmentation volumes
+and non-KC partner skeletons are outside this KC-scope handoff.

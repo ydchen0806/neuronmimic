@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "HF_revision": "b4143c83be3df42a95983d2be34af4354a25a84c",
+  "query": {
+    "dataset": "malecns_v1_0",
+    "group": null,
+    "neuron": "11862",
+    "members": 1,
+    "unique_physical_contacts": 1098,
+    "input_contacts": 487,
+    "output_contacts": 611,
+    "internal_contacts": 0,
+    "external_partner_geometry": "not included; selected KC geometries plus incident partners/annotations",
+    "functional_validation": "NOT_ESTABLISHED_BY_STRUCTURE_EXPORT",
+    "coordinate_contract": "See original bundle COORDINATES.json; preserve native coordinates"
+  },
+  "remote_vs_local_export_byte_identical": [
+    "cells.parquet",
+    "synapse_pairs.parquet",
+    "presynaptic_site_nt.parquet",
+    "geometry/11862.swc"
+  ]
+}
